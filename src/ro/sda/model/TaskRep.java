@@ -1,10 +1,9 @@
-package ro.sda;
+package ro.sda.model;
 
-import javax.servlet.http.HttpServlet;
 import java.util.*;
 
 public final class TaskRep {
-    public static TaskRep instance;
+    private static TaskRep instance;
 
     private Set<Task> taskList = new HashSet<>();
 
@@ -40,4 +39,4 @@ public final class TaskRep {
 
 
 }
-//TODO add task, set completed
+

@@ -1,4 +1,4 @@
-package ro.sda;
+package ro.sda.model;
 
 import java.util.Objects;
 

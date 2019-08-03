@@ -1,5 +1,5 @@
-<%@ page import="ro.sda.TaskRep" %>
-<%@ page import="ro.sda.Task" %>
+<%@ page import="ro.sda.model.TaskRep" %>
+<%@ page import="ro.sda.model.Task" %>
 <%@ page import="java.util.Set" %>
 <%@ page import="java.util.Collection" %><%--
   Created by IntelliJ IDEA.
@@ -9,52 +9,56 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%!
+    public void jspInit() {
+    }
+%>
 
 <html>
 <head>
     <title>TO DO</title>
     <link rel="stylesheet" href="stilizare.css">
+    <script type="text/javascript" src="actions.js"></script>
 </head>
 <body>
 
 <div id="list">
-    <h3>My To Do List</h3>
-    <form>
+    <h3 style="color: yellowgreen">My To Do List</h3>
+    <form action="${pageContext.request.contextPath}/add-new" method="post" id="sendCompleteForm">
+        <input type="hidden" name="action" value="complete"/>
         <table><%
-          if (request.getMethod().equalsIgnoreCase("post")) {
-            String t = request.getParameter("tName");
-            TaskRep.getInstance().addTask(Task.newTask().taskName(t).checked(false).build());
-          }
+            Collection<Task> tasks = TaskRep.getInstance().getAllTask();
+            request.setAttribute("tasks", tasks);
         %>
+            <c:forEach var="task" items="${tasks}">
+                <tr>
+                    <td>
+                        <c:out value="${task.action}"/>
+                    </td>
+                    <td>
+                        <c:if test="${!task.checked}">
+                            <input type="checkbox" name="checked" class="check"
+                                   onclick="changeCompleted('${task.taskName}')">
+                        </c:if>
+                    </td>
 
+                </tr>
 
-            <%
-
-                Collection<Task> tasks = TaskRep.getInstance().getAllTask();
-                for (Task task : tasks) {
-            %>
-            <tr>
-                <td><%=task.getTaskName()%>
-                </td>
-                <td class="checkBoxes"><input type="checkbox" onclick="(......)"
-                                              name="<%=task.getTaskName()%>" <%=task.isChecked() ? "checked" : ""%>>
-                  //TODO functia in java script
-                </td>
-
-            </tr>
-
-            <%
-                }
-            %>
+            </c:forEach>
         </table>
     </form>
 </div>
 
 <br/>
 <div id="form">
-    <form action="index.jsp" method="post">
-        Add new task: <input type="text" name="tName">
-        <input type="submit" value="Add">
+
+    <form action="${pageContext.request.contextPath}/add-new" method="post">
+        <input type="hidden" name="action" value="add">
+        <label for="actionName">Action: </label>
+
+        <input type="text" name="actionName" id="actionName"/>
+        <input type="submit" value="Add" class="submit"/>
     </form>
 </div>
 

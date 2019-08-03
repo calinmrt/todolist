@@ -7,4 +7,12 @@
         <error-code>500</error-code>
         <location>/error.html</location>
     </error-page>
+    <servlet>
+        <servlet-name>servletName</servlet-name>
+        <servlet-class>ro.sda.service.ToDoService</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>servletName</servlet-name>
+        <url-pattern>/add-new</url-pattern>
+    </servlet-mapping>
 </web-app>

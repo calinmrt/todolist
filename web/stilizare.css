@@ -1,0 +1,31 @@
+#list{
+    width: 400px;
+    height:30%;
+    background-color: lightgoldenrodyellow;
+    padding: 30px;
+    margin:auto;
+
+    border: solid grey 3px ;
+    border-radius: 25px;
+
+}
+#form{
+    width: 400px;
+    padding: 30px;
+    margin:auto;
+    background-color: lightgoldenrodyellow;
+    border: solid grey 3px ;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.checkBoxes{
+    text-align: right;
+}
+
+table{
+    width: 100%;
+}
+h3{
+    text-align: center;
+}

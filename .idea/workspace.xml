@@ -6,17 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a402c6dd-beb7-4d79-b1f6-1b55c62ac104" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ro/sda/service/RequestFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/todolist_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/todolist_war_exploded/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/todolist_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/todolist_war_exploded/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ro/sda/service/ToDoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ro/sda/service/ToDoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todolist.iml" beforeDir="false" afterPath="$PROJECT_DIR$/todolist.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
-    </list>
+    <list default="true" id="a402c6dd-beb7-4d79-b1f6-1b55c62ac104" name="Default Changelist" comment="sec commit" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,6 +160,7 @@
       <workItem from="1564908756398" duration="2476000" />
       <workItem from="1565003891701" duration="602000" />
       <workItem from="1565011560481" duration="1132000" />
+      <workItem from="1565115313572" duration="270000" />
     </task>
     <task id="LOCAL-00001" summary="sec commit">
       <created>1564833254392</created>

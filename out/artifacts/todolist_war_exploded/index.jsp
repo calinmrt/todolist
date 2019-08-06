@@ -8,7 +8,7 @@
   Time: 14:15
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%!
     public void jspInit() {
@@ -19,7 +19,7 @@
 <head>
     <title>TO DO</title>
     <link rel="stylesheet" href="stilizare.css">
-    <script type="text/javascript" src="actions.js"></script>
+    <script src="actions.js"></script>
 </head>
 <body>
 
@@ -27,16 +27,20 @@
     <h3 style="color: yellowgreen">My To Do List</h3>
     <form action="${pageContext.request.contextPath}/add-new" method="post" id="sendCompleteForm">
         <input type="hidden" name="action" value="complete"/>
-        <table><%
-            Collection<Task> tasks = TaskRep.getInstance().getAllTask();
-            request.setAttribute("tasks", tasks);
-        %>
+        <table>
+            <%
+                Collection<Task> tasks = TaskRep.getInstance().getAllTask();
+                request.setAttribute("tasks", tasks);
+            %>
             <c:forEach var="task" items="${tasks}">
                 <tr>
                     <td>
-                        <c:out value="${task.action}"/>
+                        <c:out value="${task.taskName}"/>
                     </td>
                     <td>
+                        <c:if test="${task.checked}">
+                            <input type="checkbox" name="checked" class="check" checked onclick="changeCompleted('${task.taskName}')">
+                        </c:if>
                         <c:if test="${!task.checked}">
                             <input type="checkbox" name="checked" class="check"
                                    onclick="changeCompleted('${task.taskName}')">

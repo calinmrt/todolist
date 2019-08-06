@@ -6,36 +6,25 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a402c6dd-beb7-4d79-b1f6-1b55c62ac104" name="Default Changelist" comment="sec commit">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/jstl_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ro/sda/service/ToDoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/actions.js" afterDir="false" />
+    <list default="true" id="a402c6dd-beb7-4d79-b1f6-1b55c62ac104" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/ro/sda/service/RequestFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/todolist_war_exploded/WEB-INF/classes/ro/sda/Task$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/todolist_war_exploded/WEB-INF/classes/ro/sda/Task$Builder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/todolist_war_exploded/WEB-INF/classes/ro/sda/Task.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/todolist_war_exploded/WEB-INF/classes/ro/sda/TaskRep.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/todolist_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/todolist_war_exploded/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/todolist_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/todolist_war_exploded/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/todolist_war_exploded/stilizare.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/todolist_war_exploded/stilizare.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/todolist/ro/sda/Task$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/todolist/ro/sda/Task$Builder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/todolist/ro/sda/Task.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/todolist/ro/sda/TaskRep.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ro/sda/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ro/sda/model/Task.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ro/sda/TaskRep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ro/sda/model/TaskRep.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ro/sda/service/ToDoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ro/sda/service/ToDoService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/todolist.iml" beforeDir="false" afterPath="$PROJECT_DIR$/todolist.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/actions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/stilizare.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/stilizare.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="todolist" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -61,14 +50,15 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/WEB-INF/lib/jstl-1.2.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -85,8 +75,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 8.5.43">
-    <configuration name="Tomcat 7.0.92" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.43" ALTERNATIVE_JRE_ENABLED="false">
+  <component name="RunManager">
+    <configuration name="Tomcat 8" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="tomcat-8.5.43" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <deployment>
         <artifact name="todolist:war exploded">
@@ -158,83 +148,6 @@
         </option>
       </method>
     </configuration>
-    <configuration name="Tomcat 8.5.43" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.43" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/todolist_war_exploded/" />
-      <option name="UPDATING_POLICY" value="restart-server" />
-      <deployment>
-        <artifact name="todolist:war exploded">
-          <settings>
-            <option name="CONTEXT_PATH" value="/todolist_war_exploded" />
-          </settings>
-        </artifact>
-      </deployment>
-      <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="Unnamed_todolist" />
-      </server-settings>
-      <predefined_log_file enabled="true" id="Tomcat" />
-      <predefined_log_file enabled="true" id="Tomcat Catalina" />
-      <predefined_log_file id="Tomcat Manager" />
-      <predefined_log_file id="Tomcat Host Manager" />
-      <predefined_log_file id="Tomcat Localhost Access" />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="64060" />
-      </RunnerSettings>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <method v="2">
-        <option name="Make" enabled="true" />
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="todolist:war exploded" />
-        </option>
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="Tomcat Server.Tomcat 8.5.43" />
-      <item itemvalue="Tomcat Server.Tomcat 7.0.92" />
-    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -251,8 +164,21 @@
       <workItem from="1564294599693" duration="219000" />
       <workItem from="1564294840653" duration="11349000" />
       <workItem from="1564611970697" duration="1850000" />
-      <workItem from="1564812565514" duration="13594000" />
+      <workItem from="1564812565514" duration="18133000" />
+      <workItem from="1564899759673" duration="2350000" />
+      <workItem from="1564905193560" duration="2260000" />
+      <workItem from="1564908756398" duration="2476000" />
+      <workItem from="1565003891701" duration="602000" />
+      <workItem from="1565011560481" duration="1132000" />
     </task>
+    <task id="LOCAL-00001" summary="sec commit">
+      <created>1564833254392</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1564833254392</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -263,7 +189,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

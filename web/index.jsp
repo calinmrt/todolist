@@ -27,16 +27,20 @@
     <h3 style="color: yellowgreen">My To Do List</h3>
     <form action="${pageContext.request.contextPath}/add-new" method="post" id="sendCompleteForm">
         <input type="hidden" name="action" value="complete"/>
-        <table><%
-            Collection<Task> tasks = TaskRep.getInstance().getAllTask();
-            request.setAttribute("tasks", tasks);
-        %>
+        <table>
+            <%
+                Collection<Task> tasks = TaskRep.getInstance().getAllTask();
+                request.setAttribute("tasks", tasks);
+            %>
             <c:forEach var="task" items="${tasks}">
                 <tr>
                     <td>
                         <c:out value="${task.taskName}"/>
                     </td>
                     <td>
+                        <c:if test="${task.checked}">
+                            <input type="checkbox" name="checked" class="check" checked onclick="changeCompleted('${task.taskName}')">
+                        </c:if>
                         <c:if test="${!task.checked}">
                             <input type="checkbox" name="checked" class="check"
                                    onclick="changeCompleted('${task.taskName}')">
